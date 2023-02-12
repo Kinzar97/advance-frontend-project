@@ -1,3 +1,4 @@
-export { useTheme } from './lib/useTheme';
+export { useTheme } from "./lib/useTheme";
+export { Theme } from "./lib/ThemeContext";
 
-export {default as ThemeProvider} from './ui/ThemeProvider';
+export { default as ThemeProvider } from "./ui/ThemeProvider";
