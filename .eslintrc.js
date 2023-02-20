@@ -30,6 +30,11 @@ module.exports = {
         '@typescript-eslint/naming-convention': 'off',
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
         '@typescript-eslint/strict-boolean-expressions': 'off',
-        "i18next/no-literal-string": [2, { "markupOnly": true }]
+        'i18next/no-literal-string': [1, { markupOnly: true }]
+    },
+    settings: {
+        react: {
+            version: 'detect'
+        }
     }
 }
