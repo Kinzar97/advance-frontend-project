@@ -1,7 +1,8 @@
 module.exports = {
     env: {
         browser: true,
-        es2021: true
+        es2021: true,
+        jest: true
     },
     extends: [
         'plugin:react/recommended',
@@ -11,6 +12,9 @@ module.exports = {
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
+        ecmaFeatures: {
+            jsx: true
+        },
         project: ['tsconfig.json']
     },
     plugins: [
@@ -30,7 +34,7 @@ module.exports = {
         '@typescript-eslint/naming-convention': 'off',
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
         '@typescript-eslint/strict-boolean-expressions': 'off',
-        'i18next/no-literal-string': [1, { markupOnly: true }],
+        'i18next/no-literal-string': [1, { markupOnly: true, ignoreAttribute: ['data-testid'] }],
         'max-len': ['error', { ignoreComments: true, code: 100 }]
     },
     settings: {
