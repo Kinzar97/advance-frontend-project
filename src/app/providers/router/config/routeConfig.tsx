@@ -7,14 +7,14 @@ import { NotFoundPage } from 'pages/NotFoundPage';
 export const routeConfig: RouteProps[] = [
     {
         path: RoutePath.main,
-        element: <MainPage />
+        element: <MainPage />,
     },
     {
         path: RoutePath.about,
-        element: <AboutPage />
+        element: <AboutPage />,
     },
     {
         path: RoutePath.not_found,
-        element: <NotFoundPage />
-    }
+        element: <NotFoundPage />,
+    },
 ];

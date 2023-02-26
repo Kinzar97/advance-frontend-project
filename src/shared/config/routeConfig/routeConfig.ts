@@ -8,5 +8,5 @@ export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.MAIN]: '/',
     [AppRoutes.ABOUT]: '/about',
     // последний
-    [AppRoutes.NOT_FOUND]: '*'
+    [AppRoutes.NOT_FOUND]: '*',
 };
