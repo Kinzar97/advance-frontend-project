@@ -19,7 +19,7 @@ export const Button: FC<ButtonProps> = (props) => {
         className,
         ...otherProps
     } = props;
-    
+
     return (
         <button
             type="submit"
